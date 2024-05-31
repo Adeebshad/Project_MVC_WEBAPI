@@ -1,0 +1,183 @@
+﻿@model PatientInformation.Models.PatientViewModel
+
+@{
+    ViewBag.Title = "Create Patient";
+}
+
+<h2>Create Patient</h2>
+
+@using (Html.BeginForm("Create", "Patient", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <h4>Patient Details</h4>
+        <hr />
+
+        <div class="form-group row">
+            @Html.LabelFor(m => m.PatientName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.PatientName, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.PatientName)
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(m => m.DiseasesName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(m => m.DiseasesName, new SelectList(Enumerable.Empty<SelectListItem>(), "Value", "Text"), "Select", new { @class = "form-control", id = "dropdown" })
+                @Html.ValidationMessageFor(m => m.DiseasesName)
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(m => m.Epilepsy, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(m => m.Epilepsy, new SelectList(Enumerable.Empty<SelectListItem>(), "Value", "Text"), "Select", new { @class = "form-control", id = "dropdown11" })
+                @Html.ValidationMessageFor(m => m.Epilepsy)
+            </div>
+        </div>
+        <div class="form-group row">
+            @Html.LabelFor(m => m.OtherNCDs, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div style="display: flex;">
+                    <select id="availableDiseases" multiple="multiple" style="width: 200px; height: 150px;">
+                        <!-- Items will be populated via JavaScript -->
+                    </select>
+
+                    <div style="display: flex; flex-direction: column; margin: 0 10px;">
+                        <button type="button" id="btnAdd" style="margin-bottom: 5px;">Add &gt;</button>
+                        <button type="button" id="btnRemove">&lt; Remove</button>
+                    </div>
+
+                    <select id="selectedDiseases" name="OtherNCDs" multiple="multiple" style="width: 200px; height: 150px;">
+                        <!-- This list will contain the selected items -->
+                    </select>
+                </div>
+                @Html.ValidationMessageFor(m => m.OtherNCDs)
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(m => m.Allergies, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div style="display: flex;">
+                    <select id="availableAllergies" multiple="multiple" style="width: 200px; height: 150px;">
+                        <!-- Items will be populated via JavaScript -->
+                    </select>
+
+                    <div style="display: flex; flex-direction: column; margin: 0 10px;">
+                        <button type="button" id="btnAddAllergies" style="margin-bottom: 5px;">Add &gt;</button>
+                        <button type="button" id="btnRemoveAllergies">&lt; Remove</button>
+                    </div>
+
+                    <select id="selectedAllergies" name="Allergies" multiple="multiple" style="width: 200px; height: 150px;">
+                        <!-- This list will contain the selected items -->
+                    </select>
+                </div>
+                @Html.ValidationMessageFor(m => m.Allergies)
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: 'https://localhost:7220/api/Disease/GetDiseases',
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                var dropdown = $('#dropdown');
+                dropdown.empty();
+                dropdown.append($('<option></option>').attr('value', '').text('Select')); // Default placeholder option
+                $.each(data, function (index, item) {
+                    console.log(item.id);
+                    dropdown.append($('<option></option>').attr('value', item.id).text(item.name));
+                });
+            },
+            error: function () {
+                alert('Failed to load dropdown data.');
+            }
+        });
+    });
+
+    $.ajax({
+        url: 'https://localhost:7220/api/NCD/GetNCD',
+        type: 'GET',
+        dataType: 'json',
+        success: function (data) {
+            var availableDiseases = $('#availableDiseases');
+            availableDiseases.empty();
+            $.each(data, function (index, item) {
+                availableDiseases.append($('<option></option>').attr('value', item.id).text(item.ncdName
+                ));
+            });
+        },
+        error: function () {
+            alert('Failed to load dropdown data.');
+        }
+    });
+
+    $.ajax({
+        url: 'https://localhost:7220/api/Allergies/GetAllergies',
+        type: 'GET',
+        dataType: 'json',
+        success: function (data) {
+                var availableAllergies = $('#availableAllergies');
+                availableAllergies.empty();
+                $.each(data, function (index, item) {
+                availableAllergies.append($('<option></option>').attr('value', item.id).text(item.allergiesName
+                ));
+                }); 
+                console.log(data);
+        },
+        error: function () {
+            alert('Failed to load dropdown data.');
+        }
+    });
+
+
+    // Move selected items to selectedDiseases
+    $('#btnAdd').click(function () {
+        $('#availableDiseases option:selected').appendTo('#selectedDiseases');
+    });
+
+    // Move selected items back to availableDiseases
+    $('#btnRemove').click(function () {
+        $('#selectedDiseases option:selected').appendTo('#availableDiseases');
+    });
+
+    // Ensure all selected items are submitted with the form
+    $('form').submit(function () {
+        $('#selectedDiseases option').prop('selected', true);
+    });
+
+
+    var dropdown23 = $('#dropdown11');
+    dropdown23.empty();
+    dropdown23.append($('<option></option>').attr('value', '').text('Select')); // Default placeholder option
+    
+    dropdown23.append($('<option></option>').attr('value', true).text("True"));
+    dropdown23.append($('<option></option>').attr('value', false).text("False"));
+
+    // Move selected items to selectedAllergies
+    $('#btnAddAllergies').click(function () {
+        $('#availableAllergies option:selected').appendTo('#selectedAllergies');
+    });
+
+    // Move selected items back to availableDiseases
+    $('#btnRemoveAllergies').click(function () {
+        $('#selectedAllergies option:selected').appendTo('#availableAllergies');
+    });
+
+    // Ensure all selected items are submitted with the form
+    $('form').submit(function () {
+        $('#selectedAllergies option').prop('selected', true);
+    });
+
+</script>

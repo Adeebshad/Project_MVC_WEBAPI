@@ -1,0 +1,111 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model PatientInformation.Models.PatientViewModel
+
+@{
+    ViewBag.Title = "Create Patient";
+}
+
+<h2>Create Patient</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <h4>Patient Details</h4>
+        <hr />
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.PatientName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.PatientName, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.PatientName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.DiseasesName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.DiseasesName, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.DiseasesName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Epilepsy, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(m => m.Epilepsy, new SelectList(new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Yes", Value = "true" },
+                    new SelectListItem { Text = "No", Value = "false" }
+                }), new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Epilepsy)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @* @Html.Label("Other NCDs", new { @class = "control-label col-md-2" }) *@
+            <div class="col-md-10">
+                <select id="OtherNCDs" class="form-control" multiple="multiple">
+                    <option>Asthma</option>
+                    <option>Cancer</option>
+                    <option>Disorders of ear</option>
+                    <option>Disorder of eye</option>
+                    <option>Mental illness</option>
+                    <option>Oral health problems</option>
+                </select>
+                <button type="button" id="addOtherNCDs" class="btn btn-default">Add ></button>
+                @* <button type="button" id="removeOtherNCDs" class="btn btn-default">< Remove</button> *@
+                <select id="selectedOtherNCDs" class="form-control" multiple="multiple"></select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @* @Html.Label("Allergies", new { @class = "control-label col-md-2" }) *@
+            <div class="col-md-10">
+                <select id="Allergies" class="form-control" multiple="multiple">
+                    <option>Drugs - Penicillin</option>
+                    <option>Drugs - Others</option>
+                    <option>Animals</option>
+                    <option>Food</option>
+                    <option>Ointments</option>
+                    <option>Plant</option>
+                    <option>Sprays</option>
+                    <option>Others</option>
+                    <option>No Allergies</option>
+                </select>
+                <button type="button" id="addAllergies" class="btn btn-default">Add ></button>
+                @* <button type="button" id="removeAllergies" class="btn btn-default">< Remove</button> *@
+                <select id="selectedAllergies" class="form-control" multiple="multiple"></select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#addOtherNCDs").click(function () {
+            $("#OtherNCDs option:selected").appendTo("#selectedOtherNCDs");
+        });
+        $("#removeOtherNCDs").click(function () {
+            $("#selectedOtherNCDs option:selected").appendTo("#OtherNCDs");
+        });
+
+        $("#addAllergies").click(function () {
+            $("#Allergies option:selected").appendTo("#selectedAllergies");
+        });
+        $("#removeAllergies").click(function () {
+            $("#selectedAllergies option:selected").appendTo("#Allergies");
+        });
+    });
+</script>
+
