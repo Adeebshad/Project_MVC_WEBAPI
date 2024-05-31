@@ -58,3 +58,15 @@ E:\Excel Technology Ltd\AspDotNetStartUp\Basic.Domain\obj\Debug\net6.0\Basic.Dom
 E:\Excel Technology Ltd\AspDotNetStartUp\Basic.Domain\obj\Debug\net6.0\refint\Basic.Domain.dll
 E:\Excel Technology Ltd\AspDotNetStartUp\Basic.Domain\obj\Debug\net6.0\Basic.Domain.pdb
 E:\Excel Technology Ltd\AspDotNetStartUp\Basic.Domain\obj\Debug\net6.0\ref\Basic.Domain.dll
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\AspDotNetStartUp\Basic.Domain\bin\Debug\net6.0\Basic.Domain.deps.json
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\AspDotNetStartUp\Basic.Domain\bin\Debug\net6.0\Basic.Domain.dll
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\AspDotNetStartUp\Basic.Domain\bin\Debug\net6.0\Basic.Domain.pdb
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\AspDotNetStartUp\Basic.Domain\obj\Debug\net6.0\Basic.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\AspDotNetStartUp\Basic.Domain\obj\Debug\net6.0\Basic.Domain.AssemblyInfoInputs.cache
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\AspDotNetStartUp\Basic.Domain\obj\Debug\net6.0\Basic.Domain.AssemblyInfo.cs
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\AspDotNetStartUp\Basic.Domain\obj\Debug\net6.0\Basic.Domain.csproj.CoreCompileInputs.cache
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\AspDotNetStartUp\Basic.Domain\obj\Debug\net6.0\Basic.Domain.sourcelink.json
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\AspDotNetStartUp\Basic.Domain\obj\Debug\net6.0\Basic.Domain.dll
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\AspDotNetStartUp\Basic.Domain\obj\Debug\net6.0\refint\Basic.Domain.dll
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\AspDotNetStartUp\Basic.Domain\obj\Debug\net6.0\Basic.Domain.pdb
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\AspDotNetStartUp\Basic.Domain\obj\Debug\net6.0\ref\Basic.Domain.dll

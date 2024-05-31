@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Basic.DataAccesEF.Migrations
 {
     [DbContext(typeof(PatientsInfoContext))]
-    [Migration("20240530182811_AddField")]
-    partial class AddField
+    [Migration("20240531054021_AllTableAdd")]
+    partial class AllTableAdd
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -38,6 +38,27 @@ namespace Basic.DataAccesEF.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Allergies");
+                });
+
+            modelBuilder.Entity("Basic.Domain.Models.Allergies_Details", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("AllergyId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PatientInfoId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PatientInfoId");
+
+                    b.ToTable("Allergies_Details");
                 });
 
             modelBuilder.Entity("Basic.Domain.Models.Diseases", b =>
@@ -75,10 +96,10 @@ namespace Basic.DataAccesEF.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Ncd");
+                    b.ToTable("NCD");
                 });
 
-            modelBuilder.Entity("Basic.Domain.Models.OtherAllergy", b =>
+            modelBuilder.Entity("Basic.Domain.Models.NCD_Details", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -86,9 +107,8 @@ namespace Basic.DataAccesEF.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("NCDId")
+                        .HasColumnType("int");
 
                     b.Property<int>("PatientInfoId")
                         .HasColumnType("int");
@@ -97,29 +117,7 @@ namespace Basic.DataAccesEF.Migrations
 
                     b.HasIndex("PatientInfoId");
 
-                    b.ToTable("OtherAllergies");
-                });
-
-            modelBuilder.Entity("Basic.Domain.Models.OtherNCD", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PatientInfoId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PatientInfoId");
-
-                    b.ToTable("OtherNCDs");
+                    b.ToTable("NCD_Details");
                 });
 
             modelBuilder.Entity("Basic.Domain.Models.PatientInfoStore", b =>
@@ -130,9 +128,8 @@ namespace Basic.DataAccesEF.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("DiseasesName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("DiseasesId")
+                        .HasColumnType("int");
 
                     b.Property<bool>("Epilepsy")
                         .HasColumnType("bit");
@@ -146,7 +143,7 @@ namespace Basic.DataAccesEF.Migrations
                     b.ToTable("PatientInfoStore");
                 });
 
-            modelBuilder.Entity("Basic.Domain.Models.OtherAllergy", b =>
+            modelBuilder.Entity("Basic.Domain.Models.Allergies_Details", b =>
                 {
                     b.HasOne("Basic.Domain.Models.PatientInfoStore", "PatientInfoStore")
                         .WithMany("Allergies")
@@ -157,10 +154,10 @@ namespace Basic.DataAccesEF.Migrations
                     b.Navigation("PatientInfoStore");
                 });
 
-            modelBuilder.Entity("Basic.Domain.Models.OtherNCD", b =>
+            modelBuilder.Entity("Basic.Domain.Models.NCD_Details", b =>
                 {
                     b.HasOne("Basic.Domain.Models.PatientInfoStore", "PatientInfoStore")
-                        .WithMany("OtherNCDs")
+                        .WithMany("NCDs")
                         .HasForeignKey("PatientInfoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -172,7 +169,7 @@ namespace Basic.DataAccesEF.Migrations
                 {
                     b.Navigation("Allergies");
 
-                    b.Navigation("OtherNCDs");
+                    b.Navigation("NCDs");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Excel Technology Ltd\\PatientInformationsln\\PatientInformation\\PatientInformation.csproj": {}
+    "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\PatientInformationsln\\PatientInformation\\PatientInformation.csproj": {}
   },
   "projects": {
-    "E:\\Excel Technology Ltd\\PatientInformationsln\\PatientInformation\\PatientInformation.csproj": {
+    "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\PatientInformationsln\\PatientInformation\\PatientInformation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Excel Technology Ltd\\PatientInformationsln\\PatientInformation\\PatientInformation.csproj",
+        "projectUniqueName": "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\PatientInformationsln\\PatientInformation\\PatientInformation.csproj",
         "projectName": "PatientInformation",
-        "projectPath": "E:\\Excel Technology Ltd\\PatientInformationsln\\PatientInformation\\PatientInformation.csproj",
+        "projectPath": "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\PatientInformationsln\\PatientInformation\\PatientInformation.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "E:\\Excel Technology Ltd\\PatientInformationsln\\PatientInformation\\obj\\",
+        "outputPath": "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\PatientInformationsln\\PatientInformation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",

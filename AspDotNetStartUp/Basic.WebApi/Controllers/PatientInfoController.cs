@@ -64,25 +64,25 @@ namespace Basic.WebApi.Controllers
         [HttpPost("AddPatientInfo")]
         public async Task<IActionResult> EnterItem([FromBody] PatientInfo patientInfo)
         {
-            List<OtherNCD> er = new List<OtherNCD>();
+            List<NCD_Details> er = new List<NCD_Details>();
             foreach (var item in patientInfo.OtherNCDs) {
-                var otherNCD = new OtherNCD();
-                otherNCD.Name = item;
+                var otherNCD = new NCD_Details();
+                otherNCD.NCDId = int.Parse(item);
                 otherNCD.PatientInfoId = patientInfo.Id;
                 er.Add(otherNCD);
             }
-            List<OtherAllergy> ar = new List<OtherAllergy>();
+            List<Allergies_Details> ar = new List<Allergies_Details>();
             foreach (var item in patientInfo.Allergies)
             {
-                var otherAllergy = new OtherAllergy();
-                otherAllergy.Name = item;
+                var otherAllergy = new Allergies_Details();
+                otherAllergy.AllergyId = int.Parse(item);
                 otherAllergy.PatientInfoId = patientInfo.Id;
                 ar.Add(otherAllergy);
             }
             PatientInfoStore Ps = new PatientInfoStore();
-            Ps.OtherNCDs = er;
+            Ps.NCDs = er;
             Ps.PatientName = patientInfo.PatientName;
-            Ps.DiseasesName = patientInfo.DiseasesName;
+            Ps.DiseasesId = int.Parse(patientInfo.DiseasesName);
             Ps.Epilepsy = patientInfo.Epilepsy;
             Ps.Allergies = ar;
 

@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Excel Technology Ltd\\PatientInformationsln\\",
+  "WorkspaceRootPath": "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\PatientInformationsln\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A52C2B2-A4C6-42B2-A519-589A846764B3}|PatientInformation\\PatientInformation.csproj|e:\\excel technology ltd\\patientinformationsln\\patientinformation\\views\\patient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6A52C2B2-A4C6-42B2-A519-589A846764B3}|PatientInformation\\PatientInformation.csproj|solutionrelative:patientinformation\\views\\patient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6A52C2B2-A4C6-42B2-A519-589A846764B3}|PatientInformation\\PatientInformation.csproj|e:\\project_mvc_webapi\\project_mvc_webapi\\patientinformationsln\\patientinformation\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A52C2B2-A4C6-42B2-A519-589A846764B3}|PatientInformation\\PatientInformation.csproj|solutionrelative:patientinformation\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A52C2B2-A4C6-42B2-A519-589A846764B3}|PatientInformation\\PatientInformation.csproj|e:\\excel technology ltd\\patientinformationsln\\patientinformation\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A52C2B2-A4C6-42B2-A519-589A846764B3}|PatientInformation\\PatientInformation.csproj|solutionrelative:patientinformation\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A52C2B2-A4C6-42B2-A519-589A846764B3}|PatientInformation\\PatientInformation.csproj|e:\\project_mvc_webapi\\project_mvc_webapi\\patientinformationsln\\patientinformation\\views\\patient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A52C2B2-A4C6-42B2-A519-589A846764B3}|PatientInformation\\PatientInformation.csproj|solutionrelative:patientinformation\\views\\patient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Excel Technology Ltd\\PatientInformationsln\\PatientInformation\\Views\\Patient\\Index.cshtml",
+              "DocumentMoniker": "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\PatientInformationsln\\PatientInformation\\Views\\Patient\\Index.cshtml",
               "RelativeDocumentMoniker": "PatientInformation\\Views\\Patient\\Index.cshtml",
-              "ToolTip": "E:\\Excel Technology Ltd\\PatientInformationsln\\PatientInformation\\Views\\Patient\\Index.cshtml",
+              "ToolTip": "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\PatientInformationsln\\PatientInformation\\Views\\Patient\\Index.cshtml",
               "RelativeToolTip": "PatientInformation\\Views\\Patient\\Index.cshtml",
-              "ViewState": "AQIAAIsAAAAAAAAAAAAUwK0AAAAaAAAA",
+              "ViewState": "AQIAAJQAAAAAAAAAAAAUwK0AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-30T19:34:28.842Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PatientController.cs",
-              "DocumentMoniker": "E:\\Excel Technology Ltd\\PatientInformationsln\\PatientInformation\\Controllers\\PatientController.cs",
+              "DocumentMoniker": "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\PatientInformationsln\\PatientInformation\\Controllers\\PatientController.cs",
               "RelativeDocumentMoniker": "PatientInformation\\Controllers\\PatientController.cs",
-              "ToolTip": "E:\\Excel Technology Ltd\\PatientInformationsln\\PatientInformation\\Controllers\\PatientController.cs",
+              "ToolTip": "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\PatientInformationsln\\PatientInformation\\Controllers\\PatientController.cs",
               "RelativeToolTip": "PatientInformation\\Controllers\\PatientController.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAYwCoAAAAMAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAlwCoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T07:57:39.716Z",
               "EditorCaption": ""

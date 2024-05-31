@@ -3720,11 +3720,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Excel Technology Ltd\\AspDotNetStartUp\\Basic.WebApi\\Basic.WebApi.csproj",
+      "projectUniqueName": "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\AspDotNetStartUp\\Basic.WebApi\\Basic.WebApi.csproj",
       "projectName": "Basic.WebApi",
-      "projectPath": "E:\\Excel Technology Ltd\\AspDotNetStartUp\\Basic.WebApi\\Basic.WebApi.csproj",
+      "projectPath": "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\AspDotNetStartUp\\Basic.WebApi\\Basic.WebApi.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "E:\\Excel Technology Ltd\\AspDotNetStartUp\\Basic.WebApi\\obj\\",
+      "outputPath": "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\AspDotNetStartUp\\Basic.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3741,11 +3741,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\Excel Technology Ltd\\AspDotNetStartUp\\Basic.DataAccesEF\\Basic.DataAccesEF.csproj": {
-              "projectPath": "E:\\Excel Technology Ltd\\AspDotNetStartUp\\Basic.DataAccesEF\\Basic.DataAccesEF.csproj"
+            "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\AspDotNetStartUp\\Basic.DataAccesEF\\Basic.DataAccesEF.csproj": {
+              "projectPath": "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\AspDotNetStartUp\\Basic.DataAccesEF\\Basic.DataAccesEF.csproj"
             },
-            "E:\\Excel Technology Ltd\\AspDotNetStartUp\\Basic.Domain\\Basic.Domain.csproj": {
-              "projectPath": "E:\\Excel Technology Ltd\\AspDotNetStartUp\\Basic.Domain\\Basic.Domain.csproj"
+            "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\AspDotNetStartUp\\Basic.Domain\\Basic.Domain.csproj": {
+              "projectPath": "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\AspDotNetStartUp\\Basic.Domain\\Basic.Domain.csproj"
             }
           }
         }

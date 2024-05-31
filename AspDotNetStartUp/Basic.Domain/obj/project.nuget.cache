@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vLKMimn/r4ypDhMR0eMVdHTlC+4BeHhVgY7anwhmUpoMyaUeZSmlVO8aPfqVIjuDO6fwHuEi0mmwG0tB2vQhwQ==",
+  "dgSpecHash": "QPxS5++yuazUZHydmmtuyqnbUWlZp1WGzFblxzWETfbr1QN3icI994kgsnNSTG2o90i3uqGk2eansMTt6ykwjg==",
   "success": true,
-  "projectFilePath": "E:\\Excel Technology Ltd\\AspDotNetStartUp\\Basic.Domain\\Basic.Domain.csproj",
+  "projectFilePath": "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\AspDotNetStartUp\\Basic.Domain\\Basic.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

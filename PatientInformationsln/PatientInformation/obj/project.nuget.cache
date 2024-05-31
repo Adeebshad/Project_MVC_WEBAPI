@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v1hRMur+/Q5fzHDcequ7dD+G44qMZTmbLUm19zNUDXUlncfS5se07qGWgeVq8yf52mjA3QpUjcFOKurDRIHS/g==",
+  "dgSpecHash": "SWSu5hyIqKtuqnvEGcGQsZEtp8Mj8LlJ/EBJSLduHXhAHCzWVpzTdMR5GEl2rtWkgUzIYnktylhrzWV3ChuwSA==",
   "success": true,
-  "projectFilePath": "E:\\Excel Technology Ltd\\PatientInformationsln\\PatientInformation\\PatientInformation.csproj",
+  "projectFilePath": "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\PatientInformationsln\\PatientInformation\\PatientInformation.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

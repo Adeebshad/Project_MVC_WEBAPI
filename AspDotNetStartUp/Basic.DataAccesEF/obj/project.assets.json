@@ -2108,11 +2108,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Excel Technology Ltd\\AspDotNetStartUp\\Basic.DataAccesEF\\Basic.DataAccesEF.csproj",
+      "projectUniqueName": "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\AspDotNetStartUp\\Basic.DataAccesEF\\Basic.DataAccesEF.csproj",
       "projectName": "Basic.DataAccesEF",
-      "projectPath": "E:\\Excel Technology Ltd\\AspDotNetStartUp\\Basic.DataAccesEF\\Basic.DataAccesEF.csproj",
+      "projectPath": "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\AspDotNetStartUp\\Basic.DataAccesEF\\Basic.DataAccesEF.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "E:\\Excel Technology Ltd\\AspDotNetStartUp\\Basic.DataAccesEF\\obj\\",
+      "outputPath": "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\AspDotNetStartUp\\Basic.DataAccesEF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2129,8 +2129,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\Excel Technology Ltd\\AspDotNetStartUp\\Basic.Domain\\Basic.Domain.csproj": {
-              "projectPath": "E:\\Excel Technology Ltd\\AspDotNetStartUp\\Basic.Domain\\Basic.Domain.csproj"
+            "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\AspDotNetStartUp\\Basic.Domain\\Basic.Domain.csproj": {
+              "projectPath": "E:\\Project_MVC_WEBAPI\\Project_MVC_WEBAPI\\AspDotNetStartUp\\Basic.Domain\\Basic.Domain.csproj"
             }
           }
         }

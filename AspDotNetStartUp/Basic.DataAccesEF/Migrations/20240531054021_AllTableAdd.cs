@@ -4,7 +4,7 @@
 
 namespace Basic.DataAccesEF.Migrations
 {
-    public partial class AddField : Migration
+    public partial class AllTableAdd : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -36,7 +36,7 @@ namespace Basic.DataAccesEF.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Ncd",
+                name: "NCD",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -45,7 +45,7 @@ namespace Basic.DataAccesEF.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Ncd", x => x.Id);
+                    table.PrimaryKey("PK_NCD", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -55,7 +55,7 @@ namespace Basic.DataAccesEF.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     PatientName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DiseasesName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DiseasesId = table.Column<int>(type: "int", nullable: false),
                     Epilepsy = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
@@ -64,19 +64,19 @@ namespace Basic.DataAccesEF.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "OtherAllergies",
+                name: "Allergies_Details",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AllergyId = table.Column<int>(type: "int", nullable: false),
                     PatientInfoId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_OtherAllergies", x => x.Id);
+                    table.PrimaryKey("PK_Allergies_Details", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_OtherAllergies_PatientInfoStore_PatientInfoId",
+                        name: "FK_Allergies_Details_PatientInfoStore_PatientInfoId",
                         column: x => x.PatientInfoId,
                         principalTable: "PatientInfoStore",
                         principalColumn: "Id",
@@ -84,19 +84,19 @@ namespace Basic.DataAccesEF.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "OtherNCDs",
+                name: "NCD_Details",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    NCDId = table.Column<int>(type: "int", nullable: false),
                     PatientInfoId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_OtherNCDs", x => x.Id);
+                    table.PrimaryKey("PK_NCD_Details", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_OtherNCDs_PatientInfoStore_PatientInfoId",
+                        name: "FK_NCD_Details_PatientInfoStore_PatientInfoId",
                         column: x => x.PatientInfoId,
                         principalTable: "PatientInfoStore",
                         principalColumn: "Id",
@@ -104,13 +104,13 @@ namespace Basic.DataAccesEF.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_OtherAllergies_PatientInfoId",
-                table: "OtherAllergies",
+                name: "IX_Allergies_Details_PatientInfoId",
+                table: "Allergies_Details",
                 column: "PatientInfoId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_OtherNCDs_PatientInfoId",
-                table: "OtherNCDs",
+                name: "IX_NCD_Details_PatientInfoId",
+                table: "NCD_Details",
                 column: "PatientInfoId");
         }
 
@@ -120,16 +120,16 @@ namespace Basic.DataAccesEF.Migrations
                 name: "Allergies");
 
             migrationBuilder.DropTable(
+                name: "Allergies_Details");
+
+            migrationBuilder.DropTable(
                 name: "Diseases");
 
             migrationBuilder.DropTable(
-                name: "Ncd");
+                name: "NCD");
 
             migrationBuilder.DropTable(
-                name: "OtherAllergies");
-
-            migrationBuilder.DropTable(
-                name: "OtherNCDs");
+                name: "NCD_Details");
 
             migrationBuilder.DropTable(
                 name: "PatientInfoStore");

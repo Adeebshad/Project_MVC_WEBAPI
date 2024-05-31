@@ -10,24 +10,24 @@ namespace Basic.Domain.Models
     {
         public int Id { get; set; }
         public string PatientName { get; set; }
-        public string DiseasesName { get; set; }
+        public int DiseasesId { get; set; }
         public bool Epilepsy { get; set; }
-        public List<OtherNCD> OtherNCDs { get; set; }
-        public List<OtherAllergy> Allergies { get; set; }
+        public List<NCD_Details> NCDs{ get; set; }
+        public List<Allergies_Details> Allergies { get; set; }
     }
 
-    public class OtherNCD
+    public class NCD_Details
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public int NCDId { get; set; }
         public int PatientInfoId { get; set; }
         public PatientInfoStore PatientInfoStore { get; set; }
     }
 
-    public class OtherAllergy
+    public class Allergies_Details
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public int AllergyId { get; set; }
         public int PatientInfoId { get; set; }
         public PatientInfoStore PatientInfoStore { get; set; }
     }

@@ -28,3 +28,34 @@ E:\Excel Technology Ltd\PatientInformationsln\PatientInformation\obj\Debug\net6.
 E:\Excel Technology Ltd\PatientInformationsln\PatientInformation\obj\Debug\net6.0\PatientInformation.pdb
 E:\Excel Technology Ltd\PatientInformationsln\PatientInformation\obj\Debug\net6.0\PatientInformation.genruntimeconfig.cache
 E:\Excel Technology Ltd\PatientInformationsln\PatientInformation\obj\Debug\net6.0\ref\PatientInformation.dll
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\bin\Debug\net6.0\appsettings.Development.json
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\bin\Debug\net6.0\appsettings.json
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\bin\Debug\net6.0\PatientInformation.staticwebassets.runtime.json
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\bin\Debug\net6.0\PatientInformation.exe
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\bin\Debug\net6.0\PatientInformation.deps.json
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\bin\Debug\net6.0\PatientInformation.runtimeconfig.json
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\bin\Debug\net6.0\PatientInformation.dll
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\bin\Debug\net6.0\PatientInformation.pdb
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\PatientInformation.GeneratedMSBuildEditorConfig.editorconfig
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\PatientInformation.AssemblyInfoInputs.cache
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\PatientInformation.AssemblyInfo.cs
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\PatientInformation.csproj.CoreCompileInputs.cache
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\PatientInformation.MvcApplicationPartsAssemblyInfo.cache
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\PatientInformation.RazorAssemblyInfo.cache
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\PatientInformation.RazorAssemblyInfo.cs
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\PatientInformation.sourcelink.json
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\staticwebassets.build.json
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\staticwebassets.development.json
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\staticwebassets\msbuild.PatientInformation.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\staticwebassets\msbuild.build.PatientInformation.props
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.PatientInformation.props
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.PatientInformation.props
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\staticwebassets.pack.json
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\scopedcss\bundle\PatientInformation.styles.css
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\scopedcss\projectbundle\PatientInformation.bundle.scp.css
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\PatientInformation.dll
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\refint\PatientInformation.dll
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\PatientInformation.pdb
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\PatientInformation.genruntimeconfig.cache
+E:\Project_MVC_WEBAPI\Project_MVC_WEBAPI\PatientInformationsln\PatientInformation\obj\Debug\net6.0\ref\PatientInformation.dll
